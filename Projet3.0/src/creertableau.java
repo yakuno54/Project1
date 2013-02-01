@@ -11,6 +11,8 @@ import javax.swing.JTextField;
 
 public class creertableau {
 
+	   Colors color;
+	   dimension dim;
 	   JFrame fenetre;
 	   JPanel p;
 	   JPanel p3;
@@ -44,8 +46,8 @@ public class creertableau {
         	 String hehe = largeur.getText();
         	 int largeur;
         	 largeur = Integer.parseInt(hehe); 
-        	 System.out.println(coucou);
-        	 System.out.println(hehe);
+        	 dimension dim = new dimension(largeur,longueur);
+
         	    try {
         	        BufferedWriter fichier = new BufferedWriter(new FileWriter(destination));
         	        
@@ -91,5 +93,5 @@ public class creertableau {
       fenetre.setSize(300, 150);
       fenetre.setVisible(true);
   }
-   
+
 }

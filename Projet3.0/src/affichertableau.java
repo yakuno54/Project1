@@ -1,5 +1,7 @@
 
 
+import java.awt.Graphics;
+import java.awt.Image;
 import java.io.FileReader;
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -12,6 +14,8 @@ public class affichertableau {
 
 
 private void traitement() { 
+	
+
 FileReader monFichier = null;
 BufferedReader tampon = null;
 
@@ -39,6 +43,7 @@ monFichier.close();
 } catch(IOException exception1) {
 exception1.printStackTrace();
 }
+
 }
 } // Fin de main 
 }

@@ -1,11 +1,16 @@
 
 public class home {
 
-	public static void main(String args[]) {
-		  
-		  new creertableau("carte.csv");
-	      new affichertableau();
+	
+	int largeur;
+	int hauteur;
+	public home(int larg,int haut){
+		this.largeur = larg;
+		this.hauteur = haut;
+	
+		
 	}
+
 
 }
 
